@@ -1,0 +1,504 @@
+
+*** Running vivado
+    with args -log Encoding_System_RateEncoder_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Encoding_System_RateEncoder_0_0.tcl
+
+
+****** Vivado v2017.4.1 (64-bit)
+  **** SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+  **** IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Encoding_System_RateEncoder_0_0.tcl -notrace
+Command: synth_design -top Encoding_System_RateEncoder_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5936 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:19 . Memory (MB): peak = 420.102 ; gain = 98.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Encoding_System_RateEncoder_0_0' [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ip/Encoding_System_RateEncoder_0_0/synth/Encoding_System_RateEncoder_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'RateEncoder' [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/RateEncoder.v:25]
+	Parameter RESOLUTION bound to: 16 - type: integer 
+	Parameter NUM_BITS bound to: 4 - type: integer 
+	Parameter TIME_STEP bound to: 100 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter RECEIVE bound to: 2'b01 
+	Parameter LOAD bound to: 2'b10 
+	Parameter ENCODE bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'encoder' [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:23]
+	Parameter NUM_BITS bound to: 4 - type: integer 
+	Parameter TIME_STEP bound to: 100 - type: integer 
+	Parameter IDLE bound to: 1'b0 
+	Parameter GEN bound to: 1'b1 
+INFO: [Synth 8-638] synthesizing module 'lfsr' [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/lfsr.v:23]
+	Parameter NUM_BITS bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'lfsr' (1#1) [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/lfsr.v:23]
+INFO: [Synth 8-256] done synthesizing module 'encoder' (2#1) [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RateEncoder' (3#1) [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/RateEncoder.v:25]
+INFO: [Synth 8-256] done synthesizing module 'Encoding_System_RateEncoder_0_0' (4#1) [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ip/Encoding_System_RateEncoder_0_0/synth/Encoding_System_RateEncoder_0_0.v:57]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[31]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[30]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[29]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[28]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[27]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[26]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[25]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[24]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[23]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[22]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[21]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[20]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[19]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[18]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[17]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[16]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[15]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[14]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[13]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[12]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[11]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[10]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[9]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[8]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[7]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[6]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[5]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port s_axis_data[4]
+WARNING: [Synth 8-3331] design RateEncoder has unconnected port m_axis_ready
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 473.242 ; gain = 152.035
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 473.242 ; gain = 152.035
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 822.660 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 822.660 ; gain = 501.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 822.660 ; gain = 501.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:57 . Memory (MB): peak = 822.660 ; gain = 501.453
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+INFO: [Synth 8-5544] ROM "pixels_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pixels_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_ready" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:58 . Memory (MB): peak = 822.660 ; gain = 501.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 16    
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 16    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 17    
+	                7 Bit    Registers := 16    
+	                4 Bit    Registers := 17    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 85    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 16    
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 211   
+	   4 Input      1 Bit        Muxes := 26    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lfsr 
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 12    
+Module RateEncoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                4 Bit    Registers := 17    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 26    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[0].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[1].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[2].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[3].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[4].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[5].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[6].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[7].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[8].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[9].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[10].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[11].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[12].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[13].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[14].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-6014] Unused sequential element inst/genblk1[15].en_block/counter_reg was removed.  [d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/4ae2/encoder.v:50]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[31]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[30]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[29]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[28]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[27]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[26]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[25]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[24]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[23]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[22]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[21]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[20]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[19]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[18]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[17]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[16]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[15]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[14]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[13]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[12]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[11]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[10]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[9]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[8]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[7]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[6]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[5]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port s_axis_data[4]
+WARNING: [Synth 8-3331] design Encoding_System_RateEncoder_0_0 has unconnected port m_axis_ready
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[4]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[5]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[6]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[7]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[8]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[9]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[10]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[11]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[13]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[15]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[12]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[14]' (FDE) to 'inst/seed_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[0]' (FDE) to 'inst/seed_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[1]' (FDE) to 'inst/seed_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/seed_reg[2]' (FDE) to 'inst/seed_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/seed_reg[3] )
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[0]' (FD) to 'inst/m_axis_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[1]' (FD) to 'inst/m_axis_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[2]' (FD) to 'inst/m_axis_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[3]' (FD) to 'inst/m_axis_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[4]' (FD) to 'inst/m_axis_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[5]' (FD) to 'inst/m_axis_data_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[6]' (FD) to 'inst/m_axis_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[7]' (FD) to 'inst/m_axis_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[8]' (FD) to 'inst/m_axis_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[9]' (FD) to 'inst/m_axis_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[10]' (FD) to 'inst/m_axis_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[11]' (FD) to 'inst/m_axis_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[12]' (FD) to 'inst/m_axis_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[13]' (FD) to 'inst/m_axis_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[14]' (FD) to 'inst/m_axis_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[15]' (FD) to 'inst/m_axis_data_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[16]' (FD) to 'inst/m_axis_data_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[17]' (FD) to 'inst/m_axis_data_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[18]' (FD) to 'inst/m_axis_data_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[19]' (FD) to 'inst/m_axis_data_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[20]' (FD) to 'inst/m_axis_data_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[21]' (FD) to 'inst/m_axis_data_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[22]' (FD) to 'inst/m_axis_data_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[23]' (FD) to 'inst/m_axis_data_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[24]' (FD) to 'inst/m_axis_data_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[25]' (FD) to 'inst/m_axis_data_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[26]' (FD) to 'inst/m_axis_data_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[27]' (FD) to 'inst/m_axis_data_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[28]' (FD) to 'inst/m_axis_data_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[29]' (FD) to 'inst/m_axis_data_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/m_axis_data_reg[30]' (FD) to 'inst/m_axis_data_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/m_axis_data_reg[31] )
+INFO: [Synth 8-3332] Sequential element (inst/seed_reg[3]) is unused and will be removed from module Encoding_System_RateEncoder_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/m_axis_data_reg[31]) is unused and will be removed from module Encoding_System_RateEncoder_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:02 . Memory (MB): peak = 822.660 ; gain = 501.453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 841.016 ; gain = 519.809
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 841.684 ; gain = 520.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:24 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name                     | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Encoding_System_RateEncoder_0_0 | inst/genblk1[0].en_block/rng/r_LFSR_reg[13] | 9      | 16    | YES          | NO                 | YES               | 16     | 0       | 
++--------------------------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT1   |    16|
+|2     |LUT2   |    99|
+|3     |LUT3   |    49|
+|4     |LUT4   |   105|
+|5     |LUT5   |    49|
+|6     |LUT6   |    71|
+|7     |SRL16E |    16|
+|8     |FDRE   |   523|
+|9     |FDSE   |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------+------+
+|      |Instance                   |Module      |Cells |
++------+---------------------------+------------+------+
+|1     |top                        |            |   944|
+|2     |  inst                     |RateEncoder |   944|
+|3     |    \genblk1[0].en_block   |encoder     |    43|
+|4     |      rng                  |lfsr_29     |    15|
+|5     |    \genblk1[10].en_block  |encoder_0   |    43|
+|6     |      rng                  |lfsr_28     |    15|
+|7     |    \genblk1[11].en_block  |encoder_1   |    44|
+|8     |      rng                  |lfsr_27     |    15|
+|9     |    \genblk1[12].en_block  |encoder_2   |    43|
+|10    |      rng                  |lfsr_26     |    15|
+|11    |    \genblk1[13].en_block  |encoder_3   |    43|
+|12    |      rng                  |lfsr_25     |    15|
+|13    |    \genblk1[14].en_block  |encoder_4   |    43|
+|14    |      rng                  |lfsr_24     |    15|
+|15    |    \genblk1[15].en_block  |encoder_5   |    44|
+|16    |      rng                  |lfsr_23     |    15|
+|17    |    \genblk1[1].en_block   |encoder_6   |    44|
+|18    |      rng                  |lfsr_22     |    15|
+|19    |    \genblk1[2].en_block   |encoder_7   |    43|
+|20    |      rng                  |lfsr_21     |    15|
+|21    |    \genblk1[3].en_block   |encoder_8   |    43|
+|22    |      rng                  |lfsr_20     |    15|
+|23    |    \genblk1[4].en_block   |encoder_9   |    43|
+|24    |      rng                  |lfsr_19     |    15|
+|25    |    \genblk1[5].en_block   |encoder_10  |    43|
+|26    |      rng                  |lfsr_18     |    15|
+|27    |    \genblk1[6].en_block   |encoder_11  |    43|
+|28    |      rng                  |lfsr_17     |    15|
+|29    |    \genblk1[7].en_block   |encoder_12  |    47|
+|30    |      rng                  |lfsr_16     |    15|
+|31    |    \genblk1[8].en_block   |encoder_13  |    43|
+|32    |      rng                  |lfsr_15     |    15|
+|33    |    \genblk1[9].en_block   |encoder_14  |    43|
+|34    |      rng                  |lfsr        |    15|
++------+---------------------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:01:07 . Memory (MB): peak = 865.035 ; gain = 194.410
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:26 . Memory (MB): peak = 865.035 ; gain = 543.828
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:29 . Memory (MB): peak = 865.176 ; gain = 555.477
+INFO: [Common 17-1381] The checkpoint 'D:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.runs/Encoding_System_RateEncoder_0_0_synth_1/Encoding_System_RateEncoder_0_0.dcp' has been generated.
