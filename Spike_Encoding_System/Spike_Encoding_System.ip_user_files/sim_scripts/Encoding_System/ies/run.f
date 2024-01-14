@@ -6,12 +6,6 @@
 -makelib ies_lib/xpm \
   "D:/College/Verilog/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/Encoding_System/ipshared/4ae2/encoder.v" \
-  "../../../bd/Encoding_System/ipshared/4ae2/lfsr.v" \
-  "../../../bd/Encoding_System/ipshared/4ae2/RateEncoder.v" \
-  "../../../bd/Encoding_System/ip/Encoding_System_RateEncoder_0_0/sim/Encoding_System_RateEncoder_0_0.v" \
--endlib
 -makelib ies_lib/axi_infrastructure_v1_1_0 \
   "../../../../Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 -endlib
@@ -29,6 +23,10 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/Encoding_System/ip/Encoding_System_processing_system7_0_0/sim/Encoding_System_processing_system7_0_0.v" \
+  "../../../bd/Encoding_System/ipshared/4ae2/encoder.v" \
+  "../../../bd/Encoding_System/ipshared/4ae2/lfsr.v" \
+  "../../../bd/Encoding_System/ipshared/4ae2/RateEncoder.v" \
+  "../../../bd/Encoding_System/ip/Encoding_System_RateEncoder_0_0/sim/Encoding_System_RateEncoder_0_0.v" \
 -endlib
 -makelib ies_lib/lib_pkg_v1_0_2 \
   "../../../../Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
@@ -146,16 +144,6 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/Encoding_System/ip/Encoding_System_axi_smc_0/bd_0/sim/bd_a722.v" \
   "../../../bd/Encoding_System/ip/Encoding_System_axi_smc_0/sim/Encoding_System_axi_smc_0.v" \
-  "../../../bd/Encoding_System/ip/Encoding_System_system_ila_0_0/bd_0/ip/ip_0/sim/bd_80b2_ila_lib_0.v" \
--endlib
--makelib ies_lib/gigantic_mux \
-  "../../../../Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/d322/hdl/gigantic_mux_v1_0_cntr.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/Encoding_System/ip/Encoding_System_system_ila_0_0/bd_0/ip/ip_1/bd_80b2_g_inst_0_gigantic_mux.v" \
-  "../../../bd/Encoding_System/ip/Encoding_System_system_ila_0_0/bd_0/ip/ip_1/sim/bd_80b2_g_inst_0.v" \
-  "../../../bd/Encoding_System/ip/Encoding_System_system_ila_0_0/bd_0/sim/bd_80b2.v" \
-  "../../../bd/Encoding_System/ip/Encoding_System_system_ila_0_0/sim/Encoding_System_system_ila_0_0.v" \
 -endlib
 -makelib ies_lib/generic_baseblocks_v2_1_0 \
   "../../../../Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
