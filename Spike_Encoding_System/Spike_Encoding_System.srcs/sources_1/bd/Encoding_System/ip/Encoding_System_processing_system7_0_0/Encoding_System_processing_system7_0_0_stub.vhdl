@@ -1,7 +1,7 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
--- Date        : Sun Jan 14 23:12:12 2024
+-- Date        : Mon Jan 15 00:06:52 2024
 -- Host        : LAPTOP-4F36FHM5 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               d:/ASIC2/GitHub/Spike_Encoding_System/Spike_Encoding_System/Spike_Encoding_System.srcs/sources_1/bd/Encoding_System/ip/Encoding_System_processing_system7_0_0/Encoding_System_processing_system7_0_0_stub.vhdl
